@@ -23,10 +23,16 @@
                 <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             </ul>
                    <div id="acessibilidade" class="menu-acessibilidade">
-  <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao">acessibilidade</button>
+  <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao"
+  aria-expanded="false">acessibilidade</button>
   <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
-    <button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
-    <button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
+    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar
+        o tamanho da fonte">A+</button>
+    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir
+        o tamanho da fonte">A-</button>
+    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o
+     contraste de cores"> <i class="bi
+         bi-shadows"></i></button>
   </div>
 </div>
 
@@ -41,8 +47,7 @@
             <div class="inicio-fundo d-flex justify-content-between align-items-center">
                 <div class="esquerda-conteudo"></div>
                     <img src="imagens/racionaisquemsao.jfif.png" class="mb-3" width="1400" height="710" loading="lazy">
-                    <a href="#Racionais" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
-                        conhecer!</a>
+                  
                 </div>
 
             </div>
@@ -50,7 +55,7 @@
 
         <section id="racionais" class="my-5 pt-6 secao-Racionais">
             <div class="container d-flex align-items-center ">
-                <div class="col-4 d-flex justify-content-center">
+                <div class="col-4 d-flex justify-content-center fundo-galeria ">
                     <img src="imagens/racionaissimbolo.png" class="rounded-pill" alt="" width="273" height="331" loading="lazy">
                 </div>
                 <div class="col-5">
@@ -130,7 +135,7 @@
         <i class="bi bi-tiktok"></i>
         <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
     </footer>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
     <script src="script.js"></script>
 
 </body>
